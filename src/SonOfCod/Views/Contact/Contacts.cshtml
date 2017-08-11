@@ -1,0 +1,30 @@
+﻿@model IEnumerable<SonOfCod.Models.Contact>
+
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Mailing List</h2>
+
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+    </tr>
+    @foreach (var loc in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(model => loc.Name) --
+            </td>
+            <td>
+                @Html.DisplayFor(model => loc.Email) --
+            </td>
+        </tr>
+    }
+</table>

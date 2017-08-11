@@ -45,6 +45,25 @@
         @RenderBody()
         <hr />
         <footer>
+            <div>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <p>Hello @User.Identity.Name!</p>
+                    @using (Html.BeginForm("LogOff", "Account"))
+                    {
+                        <input type="submit" class="btn btn-default" value="Log out" />
+                    }
+                    @using (Html.BeginForm("Delete", "Account"))
+                    {
+                        <input type="submit" class="btn btn-default" value="Delete Account" />
+                    }
+                }
+                else
+                {
+                    <p>@Html.ActionLink("Register", "Register")</p>
+                    <p>@Html.ActionLink("Log in", "Login")</p>
+                }
+            </div>
             <p>&copy; 2017 - SonOfCod</p>
         </footer>
     </div>
