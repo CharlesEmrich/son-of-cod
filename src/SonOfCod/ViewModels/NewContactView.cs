@@ -14,7 +14,7 @@ namespace SonOfCod.ViewModels
         [Display(Name = "Email")]
         public string Email { get; set; }
 
-        [Display(Name = "Password")]
+        [Display(Name = "Name")]
         public string Name { get; set; }
     }
 }
