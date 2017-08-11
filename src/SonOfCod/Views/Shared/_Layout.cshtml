@@ -32,10 +32,10 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <p>@Html.ActionLink("Newsletter Signup", "Index", "Contact")</p>
+                    <li>@Html.ActionLink("Newsletter Signup", "Index", "Contact")</li>
                     @if (User.Identity.IsAuthenticated)
                     {
-                        <p>@Html.ActionLink("Mailing List", "Contacts", "Contact")</p>
+                        <li>@Html.ActionLink("Mailing List", "Contacts", "Contact")</li>
                     }
                 </ul>
             </div>

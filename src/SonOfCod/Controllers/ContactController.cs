@@ -10,10 +10,15 @@ namespace SonOfCod.Controllers
 {
     public class ContactController : Controller
     {
-        // GET: /<controller>/
         public IActionResult Index()
         {
             return View();
         }
+        [Authorize]
+        public IActionResult Contacts()
+        {
+            return View();
+        }
+
     }
 }

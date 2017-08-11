@@ -20,18 +20,5 @@ namespace SonOfCod.Tests.ControllerTests
             //Assert
             Assert.IsType<ViewResult>(result);
         }
-
-        [Fact]
-        public void Get_ViewResult_Contacts_Test()
-        {
-            //Arrange
-            ContactController controller = new ContactController();
-
-            //Act
-            var result = controller.Contacts();
-
-            //Assert
-            Assert.IsType<ViewResult>(result);
-        }
     }
 }
