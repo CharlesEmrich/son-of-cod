@@ -36,3 +36,27 @@ textarea {
     display: none
   }
 }
+
+.banner {
+    position: absolute;
+    left: -15%;
+    top: -20vh;
+    width: 100%;
+    z-index: -100;
+}
+
+.fish {
+    height: 65vh;
+}
+
+.fishzone {
+    position: relative;
+    text-align: center;
+}
+
+.fishzone h1 {
+    color: papayawhip;
+    text-decoration:underline;
+    position: relative;
+    bottom: 45vh;
+}
